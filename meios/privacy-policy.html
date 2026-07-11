@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de Privacidade — MEIOS</title>
+<style>
+  :root { --bg:#0B0F14; --card:#151B23; --text:#F3F4F6; --muted:#9CA3AF; --green:#2DD4A7; --border:#232B36; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.7; }
+  .wrap { max-width:820px; margin:0 auto; padding:40px 22px 80px; }
+  header { border-bottom:1px solid var(--border); padding-bottom:20px; margin-bottom:28px; }
+  h1 { font-size:30px; margin:0 0 6px; }
+  h2 { font-size:20px; margin:34px 0 10px; color:var(--green); }
+  h3 { font-size:16px; margin:18px 0 6px; color:var(--text); }
+  .muted { color:var(--muted); }
+  a { color:var(--green); }
+  code { background:var(--card); padding:2px 6px; border-radius:6px; font-size:13px; }
+  ul { padding-left:20px; }
+  li { margin:6px 0; }
+  .pill { display:inline-block; background:var(--card); border:1px solid var(--border); border-radius:999px; padding:4px 12px; font-size:13px; color:var(--muted); }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 18px; margin:14px 0; }
+  .flag { border-left:3px solid var(--green); padding-left:12px; margin:14px 0; color:var(--muted); font-size:14px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:14px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); }
+  th { color:var(--muted); font-weight:600; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Política de Privacidade — MEIOS</h1>
+    <span class="pill">Última atualização: 11 de julho de 2026</span>
+  </header>
+
+  <p>O <strong>MEIOS</strong> é um aplicativo de controle financeiro para Microempreendedores
+  Individuais (MEI). Ele ajuda você a registrar receitas e gastos, entender seu lucro real,
+  controlar o DAS e acompanhar o limite anual de faturamento do seu MEI. Esta política explica,
+  em linguagem simples, quais dados o app coleta, por que, com quem compartilhamos e quais são
+  os seus direitos. Ao usar o MEIOS, você concorda com as práticas descritas aqui.</p>
+
+  <h2>1. Dados que coletamos</h2>
+  <p>Coletamos apenas o que é digitado por você dentro do app. O MEIOS não usa câmera, não grava
+  áudio, não acessa sua localização e não lê seus contatos — não existe nenhum desses recursos no
+  aplicativo.</p>
+  <ul>
+    <li><strong>Conta:</strong> nome, e-mail e senha, usados para criar seu login e autenticar
+        você. A senha é processada pelo nosso provedor de autenticação e nunca fica salva em
+        texto legível.</li>
+    <li><strong>Lançamentos financeiros que você registra:</strong> receitas (valor, descrição,
+        categoria, data, forma de pagamento e, se você quiser, nome do cliente e observações) e
+        gastos (valor, descrição, categoria, data, forma de pagamento e observações opcionais).</li>
+    <li><strong>Perfil do seu MEI:</strong> atividade informada (ex: "Cabeleireiro") e o limite
+        anual de faturamento configurado (padrão de R$ 81.000, editável por você).</li>
+    <li><strong>Metas e obrigações:</strong> metas mensais de faturamento e lucro que você
+        definir, e o controle de pagamento do seu DAS (guia mensal do MEI) quando você marca
+        como pago.</li>
+    <li><strong>Dados de assinatura:</strong> se você assina o MEIOS Pro, registramos o status do
+        seu plano (teste grátis, ativo, expirado), as datas de validade e um identificador de
+        cliente gerado pelo RevenueCat, nosso provedor de assinaturas.</li>
+  </ul>
+  <div class="flag">
+    <strong>O que o MEIOS não coleta:</strong> fotos ou comprovantes (não há upload de imagem
+    no app), áudio ou comandos de voz, localização, contatos, dados de navegação, nem acesso à
+    sua conta bancária. Todo lançamento financeiro é digitado manualmente por você — não há
+    integração com bancos, Open Finance ou emissão de nota fiscal.
+  </div>
+
+  <h2>2. Como usamos os dados</h2>
+  <ul>
+    <li>Exibir seus lançamentos, saldo e lucro real no painel do app.</li>
+    <li>Calcular o score de saúde financeira e o diagnóstico do mês — esse cálculo roda
+        <strong>localmente, no seu aparelho</strong>, com regras matemáticas fixas e
+        transparentes. Não usamos inteligência artificial nem enviamos seus dados financeiros
+        para nenhum serviço externo de IA para gerar esse diagnóstico.</li>
+    <li>Controlar o vencimento do DAS e o uso do limite anual do MEI, e alertar quando você está
+        perto do teto de faturamento.</li>
+    <li>Gerar o relatório em PDF (recurso do plano Pro) — o arquivo é montado no próprio
+        aparelho; ele só é enviado a alguém se você mesmo escolher compartilhar pelo menu nativo
+        de compartilhamento do seu celular.</li>
+    <li>Processar, validar e liberar as funcionalidades da sua assinatura MEIOS Pro.</li>
+    <li>Manter você autenticado e sua sessão ativa entre um uso e outro do app.</li>
+  </ul>
+  <p class="muted">Não vendemos seus dados pessoais ou financeiros, e não os usamos para
+  publicidade.</p>
+
+  <h2>3. Serviços de terceiros</h2>
+  <p>Para o MEIOS funcionar, compartilhamos apenas os dados estritamente necessários com:</p>
+  <table>
+    <tr><th>Serviço</th><th>Função</th><th>O que recebe</th></tr>
+    <tr><td><strong>Supabase</strong></td><td>Banco de dados e autenticação</td>
+        <td>Todos os dados de conta e financeiros que você registra</td></tr>
+    <tr><td><strong>RevenueCat</strong></td><td>Gestão da assinatura MEIOS Pro</td>
+        <td>Identificador do seu usuário e dados da compra/assinatura</td></tr>
+    <tr><td><strong>Google Play Billing</strong> (ou App Store, quando aplicável)</td>
+        <td>Processamento do pagamento da assinatura, via RevenueCat</td>
+        <td>Dados de pagamento — o MEIOS nunca vê nem armazena os dados do seu cartão</td></tr>
+  </table>
+  <p class="muted">Não usamos redes de publicidade e, na versão atual do app, nenhum SDK de
+  analytics de terceiros está ativo. Esses provedores tratam os dados conforme suas próprias
+  políticas de privacidade e padrões de segurança.</p>
+
+  <h2>4. Armazenamento e segurança</h2>
+  <p>Seus lançamentos e dados de conta ficam no banco de dados do Supabase, protegidos por
+  <strong>Row Level Security</strong>: cada tabela tem uma política de acesso que exige que o
+  identificador da sua conta autenticada corresponda ao dono do registro — na prática, apenas
+  você consegue ler ou alterar os seus próprios lançamentos.</p>
+  <p>A comunicação entre o app e nossos servidores usa conexão criptografada (HTTPS). Para o
+  MEIOS funcionar mesmo sem internet, o app mantém uma cópia local (cache) dos seus lançamentos
+  no armazenamento do próprio aparelho; essa cópia é apagada se você desinstalar o app.
+  Mantemos seus dados no servidor enquanto sua conta estiver ativa.</p>
+
+  <h2>5. Seus direitos (LGPD)</h2>
+  <p>Como titular dos dados, você pode a qualquer momento:</p>
+  <ul>
+    <li>Confirmar a existência de tratamento e acessar os seus dados.</li>
+    <li>Corrigir dados incompletos, inexatos ou desatualizados (pela própria tela de
+        Configurações do app, no caso do seu perfil).</li>
+    <li><strong>Apagar um lançamento específico</strong> a qualquer momento: abra o lançamento
+        na lista de Lançamentos e toque em "Apagar lançamento".</li>
+    <li>Solicitar a <strong>exclusão completa da sua conta e de todos os dados associados</strong>,
+        ou a portabilidade dos seus dados, escrevendo para o e-mail de contato abaixo.
+        Atenderemos dentro do prazo legal da LGPD.</li>
+    <li>Revogar o consentimento e se opor a tratamentos específicos.</li>
+  </ul>
+
+  <h2>6. Crianças</h2>
+  <p>O MEIOS é feito para microempreendedores individuais (MEI), maiores de 18 anos. Não
+  direcionamos o aplicativo a crianças e não coletamos intencionalmente dados de menores.</p>
+
+  <h2>7. Alterações nesta política</h2>
+  <p>Podemos atualizar esta política periodicamente para refletir mudanças no app ou na
+  legislação. A data de "última atualização" no topo desta página indica a versão vigente.</p>
+
+  <h2>8. Contato</h2>
+  <p>Dúvidas, solicitações sobre privacidade ou pedidos de exclusão de conta e dados:<br/>
+  <a href="mailto:contato@meios.app.br">contato@meios.app.br</a></p>
+  <p class="muted" style="font-size:13px">
+    <em>Nota interna (remover antes de publicar): este e-mail é um placeholder — não foi
+    encontrado nenhum endereço de suporte real no código do app. Troque para o e-mail de
+    contato oficial do MEIOS antes de publicar esta página.</em>
+  </p>
+
+  <p class="muted" style="margin-top:40px">MEIOS — Controle seu MEI, entenda seu lucro real e
+  nunca mais se perca nas contas.</p>
+</div>
+</body>
+</html>

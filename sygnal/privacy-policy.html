@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Sygnal</title>
+<style>
+  :root{
+    --accent:#00c896; --accent2:#4ea1ff; --deep:#070b14; --deep2:#0b2540; --ink:#0f172a; --muted:#475569;
+    --bg:#f7f9fc; --card:#ffffff; --line:#e2e8f0; --warn:#f59e0b; --sell:#e11d48;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.7; padding:0 0 60px;
+  }
+  header{
+    background:linear-gradient(135deg,var(--deep),var(--deep2) 55%,#0a4a52);
+    color:#fff; padding:48px 24px; text-align:center;
+  }
+  header h1{font-size:1.9rem; margin-bottom:8px; letter-spacing:-.5px}
+  header p{opacity:.9; font-size:.95rem}
+  .wrap{max-width:820px; margin:-28px auto 0; padding:0 20px}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:32px 28px; box-shadow:0 10px 30px rgba(7,11,20,.08);
+  }
+  h2{color:var(--deep2); font-size:1.25rem; margin:28px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--line)}
+  h2:first-child{margin-top:0}
+  h3{color:var(--accent); font-size:1.02rem; margin:18px 0 6px}
+  p,li{color:var(--muted); font-size:.96rem}
+  ul{margin:8px 0 8px 22px}
+  li{margin:4px 0}
+  a{color:var(--accent2); text-decoration:none}
+  a:hover{text-decoration:underline}
+  strong{color:var(--ink)}
+  .tag{display:inline-block; background:#e6fbf5; color:#046c56; font-size:.75rem;
+    padding:3px 10px; border-radius:999px; margin:2px 4px 2px 0}
+  table{width:100%; border-collapse:collapse; margin:12px 0; font-size:.88rem}
+  th,td{text-align:left; padding:10px 12px; border:1px solid var(--line); vertical-align:top}
+  th{background:#f1f5f9; color:var(--deep2)}
+  .note{background:#fff7ed; border-left:4px solid var(--warn); padding:12px 16px; border-radius:8px; margin:14px 0}
+  .placeholder{background:#fef2f2; border-left:4px solid var(--sell); padding:12px 16px; border-radius:8px; margin:14px 0}
+  .placeholder strong{color:var(--sell)}
+  footer{text-align:center; color:var(--muted); font-size:.82rem; margin-top:28px}
+  code{background:#f1f5f9; padding:1px 6px; border-radius:4px; font-size:.88em}
+</style>
+</head>
+<body>
+<header>
+  <h1>Política de Privacidade — Sygnal</h1>
+  <p>Sinais de trading multi-mercado: cripto, B3 e EUA</p>
+</header>
+
+<div class="wrap">
+<div class="card">
+
+  <p><strong>Última atualização:</strong> 11 de julho de 2026 · <strong>Vigência:</strong> imediata.</p>
+  <p>Esta Política descreve como o aplicativo <strong>Sygnal</strong> ("Sygnal", "nós", "aplicativo") coleta, usa, compartilha e protege seus dados pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD)</strong>. Ao criar uma conta ou usar o Sygnal, você concorda com as práticas aqui descritas.</p>
+
+  <div class="note"><strong>Aviso de risco:</strong> o Sygnal é uma ferramenta de análise técnica e informação. Os sinais exibidos não constituem recomendação de investimento, consultoria financeira ou oferta de compra/venda de ativos. Operações em renda variável e criptoativos envolvem risco de perda. Decisões de investimento são de responsabilidade exclusiva do usuário.</p></div>
+
+  <h2>1. Quem somos (Controlador)</h2>
+  <p>O responsável pelo tratamento dos seus dados (Controlador) é o desenvolvedor do Sygnal. Canal de privacidade e contato do Encarregado (DPO):</p>
+  <ul>
+    <li>E-mail: <a href="mailto:contato@sygnal.app">contato@sygnal.app</a></li>
+  </ul>
+  <div class="placeholder"><strong>Nota interna (remover antes de publicar):</strong> este e-mail é um placeholder — não existe endereço de suporte cadastrado no código do Sygnal. Troque por um e-mail real antes de publicar esta página.</div>
+
+  <h2>2. Dados que coletamos</h2>
+
+  <h3>2.1 Dados de cadastro</h3>
+  <ul>
+    <li><strong>Nome</strong> e <strong>e-mail</strong>, informados por você na criação da conta.</li>
+    <li><strong>Senha:</strong> nunca é armazenada em texto puro. Usamos hash <strong>PBKDF2-HMAC-SHA256</strong> com 200 mil iterações e salt único por usuário — uma via de mão única, irreversível mesmo para nós.</li>
+  </ul>
+
+  <h3>2.2 Dados de uso do produto</h3>
+  <ul>
+    <li><strong>Watchlist:</strong> os ativos (ex.: BTC-USD, PETR4.SA) que você escolhe acompanhar.</li>
+    <li><strong>Plano da conta</strong> (Grátis ou Pro) e data de expiração da assinatura.</li>
+    <li>A <strong>calculadora de posição/risco</strong> (tamanho de posição, R:R) roda inteiramente no momento do cálculo e <strong>não é gravada</strong> em nenhum banco de dados.</li>
+  </ul>
+
+  <h3>2.3 Dados financeiros — assinatura</h3>
+  <p>Ao assinar o <strong>Sygnal Pro</strong>, guardamos um histórico da cobrança: provedor de pagamento usado, um identificador (referência) da transação, o plano contratado, o valor e o status (pendente/pago/falhou). <strong>Não armazenamos número de cartão, CVV nem dados bancários</strong> — esses dados são coletados e processados diretamente pelo processador de pagamento (Mercado Pago, Stripe ou Google Play, conforme o canal usado — veja a seção 5).</p>
+
+  <h3>2.4 Chave de API de corretora (recurso opcional, cripto)</h3>
+  <p>Se você optar por conectar uma corretora de criptomoedas para usar o recurso "Operar este sinal", sua <strong>API key e API secret</strong> são criptografadas (algoritmo <strong>Fernet/AES</strong>) com uma chave mestra que existe apenas no nosso servidor — nunca em texto puro, nunca enviada ao seu aparelho de volta. Antes de salvar, verificamos automaticamente que a chave <strong>não tem permissão de saque</strong>; chaves com essa permissão são recusadas. Você pode desconectar e apagar essa chave a qualquer momento, direto no app.</p>
+
+  <h3>2.5 Dados técnicos e de segurança</h3>
+  <ul>
+    <li><strong>Endereço IP:</strong> usado de forma temporária, apenas em memória (não gravado em banco de dados), para limitar tentativas de login/cadastro e evitar abuso.</li>
+    <li>Como qualquer serviço web, a infraestrutura de hospedagem (servidor/proxy) gera logs técnicos padrão de acesso, fora do controle direto do código do aplicativo.</li>
+  </ul>
+
+  <h3>2.6 O que o Sygnal NÃO coleta</h3>
+  <p>Não pedimos nem acessamos <strong>localização, câmera, microfone, contatos, galeria de fotos ou identificadores de publicidade</strong>. Esses recursos não existem no aplicativo: o app Android solicita apenas a permissão de <strong>Internet</strong>, e nosso servidor envia por padrão o cabeçalho <code>Permissions-Policy: geolocation=(), microphone=(), camera=()</code>, desligando explicitamente esses sensores no navegador/WebView.</p>
+
+  <h2>3. Como usamos seus dados (Finalidades e bases legais — LGPD)</h2>
+  <table>
+    <tr><th>Finalidade</th><th>Base legal (Art. 7º LGPD)</th></tr>
+    <tr><td>Criar e gerenciar sua conta</td><td>Execução de contrato</td></tr>
+    <tr><td>Gerar e exibir sinais de trading e sua watchlist</td><td>Execução de contrato</td></tr>
+    <tr><td>Processar assinatura do plano Pro</td><td>Execução de contrato</td></tr>
+    <tr><td>Conectar sua corretora e preparar/enviar ordens que você confirma</td><td>Consentimento / Execução de contrato</td></tr>
+    <tr><td>Prevenção a fraude, abuso e ataques de força bruta</td><td>Legítimo interesse</td></tr>
+    <tr><td>Cumprir obrigações legais, fiscais e regulatórias</td><td>Obrigação legal</td></tr>
+  </table>
+
+  <h2>4. Sinais, corretoras e execução de ordens</h2>
+  <ul>
+    <li><strong>Sinais</strong> são gerados automaticamente a partir de indicadores técnicos (RSI, MACD, médias móveis, Bandas de Bollinger, volume) sobre dados públicos de mercado. É uma ferramenta de análise — não uma recomendação personalizada.</li>
+    <li><strong>Botões "Analisar":</strong> levam você a plataformas externas (TradingView, Binance, Bybit, Investing.com, TradersClub) para ver o ativo. O Sygnal não executa nenhuma ordem nesse fluxo — é apenas um link.</li>
+    <li><strong>"Operar este sinal" (cripto, opcional):</strong> usa a chave da sua própria corretora (seção 2.4) para consultar seu saldo e montar uma <em>prévia</em> de ordem. Nada é enviado à corretora automaticamente — você precisa <strong>confirmar explicitamente</strong> cada ordem antes do envio.</li>
+    <li><strong>Gráfico ao vivo:</strong> incorporado via widget da TradingView, carregado diretamente do seu dispositivo.</li>
+  </ul>
+
+  <h2>5. Compartilhamento de dados (Operadores e terceiros)</h2>
+  <p>Não vendemos seus dados a ninguém, em nenhuma hipótese. Compartilhamos apenas com operadores necessários à operação do app, e apenas o dado necessário para cada finalidade:</p>
+  <table>
+    <tr><th>Parceiro</th><th>Papel</th><th>Dado compartilhado</th></tr>
+    <tr><td>Mercado Pago</td><td>Processamento de pagamento (Pix/cartão) do plano Pro</td><td>Valor, descrição do plano, referência interna da cobrança. Não enviamos seu nome ou e-mail nesse payload.</td></tr>
+    <tr><td>Stripe</td><td>Processamento de pagamento alternativo (quando configurado pelo desenvolvedor)</td><td>Valor, descrição do plano, referência interna da cobrança.</td></tr>
+    <tr><td>Google Play Billing</td><td>Verificação de assinatura comprada pela Play Store (app Android)</td><td>Token de compra e ID do produto, consultados diretamente na API oficial do Google.</td></tr>
+    <tr><td>Corretora que você conectar (ex.: Binance, ou outra suportada)</td><td>Executa as ordens que você confirma dentro do app</td><td>Sua API key/secret (criptografadas em trânsito e em repouso), símbolo, quantidade e preço da ordem.</td></tr>
+    <tr><td>Telegram</td><td>Canal de alertas para sinais de alta confiança (HIGH)</td><td>Conteúdo do sinal (ativo, direção, entrada/stop/alvo) publicado em um canal — <strong>não</strong> vinculado à sua conta nem contém seus dados pessoais.</td></tr>
+    <tr><td>TradingView</td><td>Gráfico incorporado e links de análise</td><td>Seu dispositivo se conecta diretamente à TradingView ao abrir um gráfico (endereço IP, conforme a política própria deles).</td></tr>
+    <tr><td>Google Fonts</td><td>Carregamento das fontes tipográficas do app</td><td>Endereço IP do seu dispositivo, no padrão de qualquer carregamento de fonte web do Google.</td></tr>
+    <tr><td>Provedor de hospedagem</td><td>Executa o backend e armazena o banco de dados</td><td>Todos os dados de conta descritos na seção 2.</td></tr>
+  </table>
+  <p>Podemos divulgar dados quando exigido por lei, ordem judicial ou autoridade competente.</p>
+
+  <h2>6. Retenção</h2>
+  <p>Mantemos seus dados enquanto sua conta estiver ativa e pelo período necessário às finalidades descritas ou exigências legais (ex.: registros fiscais de transações). Ao solicitar a exclusão (seção 8), removemos seus dados pessoais, salvo obrigação legal de retenção.</p>
+
+  <h2>7. Seus direitos (Art. 18 LGPD)</h2>
+  <p>Você pode, a qualquer momento:</p>
+  <ul>
+    <li>Confirmar a existência de tratamento e acessar seus dados;</li>
+    <li>Corrigir dados incompletos ou desatualizados;</li>
+    <li>Solicitar anonimização, bloqueio ou eliminação;</li>
+    <li>Solicitar a portabilidade;</li>
+    <li>Revogar consentimento e excluir a conta;</li>
+    <li>Obter informação sobre com quem compartilhamos seus dados.</li>
+  </ul>
+  <p>Para exercer seus direitos, escreva para <a href="mailto:contato@sygnal.app">contato@sygnal.app</a>. Responderemos nos prazos previstos pela LGPD.</p>
+
+  <h2>8. Exclusão de conta e dados</h2>
+  <p><strong>Chave de corretora:</strong> pode ser desconectada e apagada por você, a qualquer momento, direto no app (chip "corretora conectada" → desconectar).</p>
+  <p><strong>Conta completa:</strong> hoje o Sygnal ainda não tem um botão de autoatendimento para excluir a conta inteira. Para solicitar a exclusão da sua conta e de todos os dados pessoais associados (cadastro, watchlist, histórico de assinatura), <strong>envie um e-mail para <a href="mailto:contato@sygnal.app">contato@sygnal.app</a></strong> a partir do endereço cadastrado, pedindo a exclusão. Confirmaremos por e-mail quando a exclusão for concluída.</p>
+
+  <h2>9. Segurança</h2>
+  <ul>
+    <li><strong>Senhas:</strong> hash PBKDF2-HMAC-SHA256, 200.000 iterações, salt único, comparação em tempo constante.</li>
+    <li><strong>Sessão:</strong> token JWT assinado (HS256), com expiração de 7 dias.</li>
+    <li><strong>Chaves de corretora:</strong> criptografadas em repouso (Fernet/AES) com chave mestra exclusiva do servidor.</li>
+    <li><strong>Tráfego:</strong> comunicação entre o app e nossos servidores via HTTPS/TLS.</li>
+    <li><strong>Cabeçalhos de segurança:</strong> bloqueio de MIME sniffing, proteção contra clickjacking (X-Frame-Options) e política de permissões que desliga localização, câmera e microfone por padrão.</li>
+  </ul>
+  <p>Nenhum sistema é 100% infalível. Em caso de incidente de segurança relevante, notificaremos os titulares afetados e a ANPD conforme exigido pela LGPD.</p>
+
+  <h2>10. Menores de idade</h2>
+  <p>O Sygnal não é direcionado a menores de 18 anos, por lidar com informações de mercado financeiro e investimentos. Não coletamos intencionalmente dados de menores.</p>
+
+  <h2>11. Transferência internacional</h2>
+  <p>Alguns operadores citados na seção 5 (ex.: Stripe, Google Play, TradingView, Telegram, Google Fonts) podem processar dados em servidores fora do Brasil. Nesses casos, adotamos salvaguardas compatíveis com a LGPD.</p>
+
+  <h2>12. Alterações desta Política</h2>
+  <p>Podemos atualizar esta Política. Mudanças relevantes serão comunicadas no app ou por e-mail. A data no topo indica a versão vigente.</p>
+
+  <h2>13. Contato</h2>
+  <p>Dúvidas sobre privacidade ou seus dados:</p>
+  <ul>
+    <li>E-mail / Encarregado (DPO): <a href="mailto:contato@sygnal.app">contato@sygnal.app</a></li>
+  </ul>
+
+  <p style="margin-top:18px">
+    <span class="tag">Trading</span><span class="tag">Multi-mercado</span>
+    <span class="tag">Cripto</span><span class="tag">B3</span><span class="tag">EUA</span>
+    <span class="tag">Mercado Pago</span><span class="tag">Google Play</span><span class="tag">LGPD</span>
+  </p>
+
+  <footer>© 2026 Sygnal. Todos os direitos reservados. Ferramenta de análise técnica e informação — não constitui recomendação de investimento, consultoria financeira ou oferta de compra/venda de ativos. Operações envolvem risco de perda.</footer>
+</div>
+</div>
+</body>
+</html>
