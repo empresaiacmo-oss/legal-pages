@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — ContoMágico</title>
+<style>
+  :root{
+    --accent:#8b5cf6; --accent2:#f472b6; --deep:#0e0a24; --deep2:#1f1547; --ink:#0f172a; --muted:#475569;
+    --bg:#f7f5fc; --card:#ffffff; --line:#e6e0f5; --warn:#f59e0b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;padding:0 0 60px}
+  header{background:linear-gradient(135deg,var(--deep),var(--deep2) 60%,#4c2a7a);color:#fff;padding:48px 24px;text-align:center}
+  header h1{font-size:1.9rem;margin-bottom:8px;letter-spacing:-.5px}
+  header p{opacity:.9;font-size:.95rem}
+  .wrap{max-width:820px;margin:-28px auto 0;padding:0 20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px 28px;box-shadow:0 10px 30px rgba(14,10,36,.08)}
+  h2{color:var(--deep2);font-size:1.25rem;margin:28px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+  h2:first-child{margin-top:0}
+  h3{color:var(--accent);font-size:1.02rem;margin:18px 0 6px}
+  p,li{color:var(--muted);font-size:.96rem}
+  ul{margin:8px 0 8px 22px}
+  li{margin:4px 0}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  strong{color:var(--ink)}
+  .tag{display:inline-block;background:#f3ecfe;color:#5b21b6;font-size:.75rem;padding:3px 10px;border-radius:999px;margin:2px 4px 2px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.88rem}
+  th,td{text-align:left;padding:10px 12px;border:1px solid var(--line);vertical-align:top}
+  th{background:#f4f0fb;color:var(--deep2)}
+  .note{background:#fff7ed;border-left:4px solid var(--warn);padding:12px 16px;border-radius:8px;margin:14px 0}
+  footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:28px}
+  code{background:#f4f0fb;padding:1px 6px;border-radius:4px;font-size:.88em}
+</style>
+</head>
+<body>
+<header>
+  <h1>Política de Privacidade — ContoMágico</h1>
+  <p>Histórias infantis ilustradas e narradas, com a sua criança como heroína</p>
+</header>
+
+<div class="wrap">
+<div class="card">
+
+  <p><strong>Última atualização:</strong> 19 de julho de 2026 · <strong>Vigência:</strong> imediata.</p>
+  <p>Esta Política descreve como o aplicativo <strong>ContoMágico</strong> ("ContoMágico", "nós", "aplicativo") coleta, usa, compartilha e protege dados pessoais, em conformidade com a <strong>Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD)</strong>. Ao criar uma conta ou usar o ContoMágico, você concorda com as práticas aqui descritas.</p>
+
+  <div class="note"><strong>Sobre fotos de crianças:</strong> o ContoMágico é uma ferramenta operada por adultos (pais/responsáveis) para criar histórias personalizadas para crianças — não é um produto de uso direto e autônomo por crianças. A conta, o pagamento e o consentimento para upload da foto são sempre do responsável adulto, nunca da criança.</div>
+
+  <h2>1. Quem somos (Controlador)</h2>
+  <p>O responsável pelo tratamento dos dados (Controlador) é o desenvolvedor do ContoMágico. Canal de privacidade e contato do Encarregado (DPO):</p>
+  <ul><li>E-mail: <a href="mailto:cmokite@gmail.com">cmokite@gmail.com</a></li></ul>
+
+  <h2>2. Dados que coletamos</h2>
+
+  <h3>2.1 Dados de cadastro</h3>
+  <ul>
+    <li><strong>E-mail</strong> e <strong>senha</strong> (armazenada com hash, nunca em texto puro), informados na criação da conta.</li>
+  </ul>
+
+  <h3>2.2 Foto e dados da criança (para gerar a história)</h3>
+  <ul>
+    <li>Ao criar uma história, o responsável envia uma <strong>foto da criança</strong> escolhida do aparelho (câmera ou galeria, sempre por ação explícita do usuário — o app nunca acessa a câmera ou a galeria sozinho) e um <strong>nome/prompt</strong> descrevendo a história desejada.</li>
+    <li>A foto é enviada ao provedor de geração de imagem (OpenAI, modelo gpt-image-1) para criar as ilustrações da história com a semelhança da criança como personagem. A foto <strong>não é usada para reconhecimento facial, identificação biométrica ou qualquer finalidade além de gerar as ilustrações daquela história específica</strong>.</li>
+    <li>O texto da história é gerado por um modelo de linguagem (OpenAI GPT-4o) a partir do prompt informado.</li>
+  </ul>
+
+  <h3>2.3 Narração (recurso opcional)</h3>
+  <p>Se o responsável ativar narração, o texto da história é convertido em áudio via ElevenLabs (voz padrão) ou, quando configurada, uma voz clonada a partir de uma amostra de áudio enviada pelo próprio responsável para narrar com a própria voz.</p>
+
+  <h3>2.4 Dados financeiros — créditos</h3>
+  <p>Ao comprar créditos para gerar histórias, guardamos um histórico da cobrança: provedor de pagamento, referência da transação, pacote comprado, valor e status. <strong>Não armazenamos número de cartão, CVV nem dados bancários</strong> — esses dados são coletados e processados diretamente pelo Mercado Pago ou pelo Google Play, conforme o canal usado.</p>
+
+  <h3>2.5 O que o ContoMágico NÃO coleta</h3>
+  <p>Não coletamos localização, contatos ou identificadores de publicidade. Não usamos a foto da criança para nenhuma finalidade fora da geração daquela história específica.</p>
+
+  <h2>3. Como usamos os dados (Finalidades e bases legais — LGPD)</h2>
+  <table>
+    <tr><th>Finalidade</th><th>Base legal (Art. 7º LGPD)</th></tr>
+    <tr><td>Criar e gerenciar a conta</td><td>Execução de contrato</td></tr>
+    <tr><td>Gerar a história (texto, ilustrações com a foto enviada, narração)</td><td>Consentimento do responsável / Execução de contrato</td></tr>
+    <tr><td>Processar a compra de créditos</td><td>Execução de contrato</td></tr>
+    <tr><td>Prevenção a fraude e abuso</td><td>Legítimo interesse</td></tr>
+    <tr><td>Cumprir obrigações legais e fiscais</td><td>Obrigação legal</td></tr>
+  </table>
+
+  <h2>4. Compartilhamento de dados (Operadores e terceiros)</h2>
+  <p>Não vendemos dados a ninguém. Compartilhamos apenas com operadores necessários à operação do app:</p>
+  <table>
+    <tr><th>Parceiro</th><th>Papel</th><th>Dado compartilhado</th></tr>
+    <tr><td>OpenAI</td><td>Geração do texto e das ilustrações da história</td><td>Foto da criança enviada, prompt/nome da história, texto gerado.</td></tr>
+    <tr><td>ElevenLabs</td><td>Narração em áudio (quando ativada)</td><td>Texto da história e, se clonagem de voz for usada, a amostra de voz enviada.</td></tr>
+    <tr><td>Mercado Pago</td><td>Processamento de pagamento (Pix/cartão) dos pacotes de crédito</td><td>Valor, descrição do pacote, referência interna da cobrança.</td></tr>
+    <tr><td>Google Play Billing</td><td>Verificação de compra feita pela Play Store (app Android)</td><td>Token de compra e ID do produto, consultados na API oficial do Google.</td></tr>
+    <tr><td>Provedor de hospedagem</td><td>Executa o backend e armazena o banco de dados</td><td>Todos os dados de conta descritos na seção 2.</td></tr>
+  </table>
+  <p>Podemos divulgar dados quando exigido por lei, ordem judicial ou autoridade competente.</p>
+
+  <h2>5. Retenção</h2>
+  <p>Mantemos os dados enquanto a conta estiver ativa e pelo período necessário às finalidades descritas ou exigências legais. Histórias e a foto associada a elas ficam disponíveis para o responsável reler/regerar enquanto a conta existir. Ao solicitar a exclusão (seção 7), removemos os dados pessoais, incluindo fotos enviadas, salvo obrigação legal de retenção.</p>
+
+  <h2>6. Seus direitos (Art. 18 LGPD)</h2>
+  <p>Você pode, a qualquer momento: confirmar a existência de tratamento e acessar seus dados; corrigir dados incompletos ou desatualizados; solicitar anonimização, bloqueio ou eliminação (incluindo fotos enviadas); solicitar a portabilidade; revogar consentimento e excluir a conta.</p>
+  <p>Para exercer seus direitos, escreva para <a href="mailto:cmokite@gmail.com">cmokite@gmail.com</a>.</p>
+
+  <h2>7. Exclusão de conta e dados</h2>
+  <p>Para solicitar a exclusão da sua conta e de todos os dados pessoais associados (cadastro, fotos enviadas, histórias geradas, histórico de compras), envie um e-mail para <a href="mailto:cmokite@gmail.com">cmokite@gmail.com</a> a partir do endereço cadastrado. Confirmaremos por e-mail quando a exclusão for concluída.</p>
+
+  <h2>8. Segurança</h2>
+  <ul>
+    <li><strong>Senhas:</strong> armazenadas com hash, nunca em texto puro.</li>
+    <li><strong>Tráfego:</strong> comunicação entre o app e nossos servidores via HTTPS/TLS.</li>
+    <li><strong>Pagamentos:</strong> nunca tocam nosso servidor — processados diretamente pelo Mercado Pago ou Google Play.</li>
+  </ul>
+  <p>Nenhum sistema é 100% infalível. Em caso de incidente de segurança relevante, notificaremos os titulares afetados e a ANPD conforme exigido pela LGPD.</p>
+
+  <h2>9. Menores de idade</h2>
+  <p>O ContoMágico não é destinado ao uso direto e autônomo por crianças — é uma ferramenta operada por um responsável adulto, que consente explicitamente ao enviar a foto da criança para gerar cada história. Não coletamos dados de crianças fora desse fluxo consentido pelo responsável.</p>
+
+  <h2>10. Transferência internacional</h2>
+  <p>Os operadores citados na seção 4 (OpenAI, ElevenLabs, Google Play) podem processar dados em servidores fora do Brasil. Nesses casos, adotamos salvaguardas compatíveis com a LGPD.</p>
+
+  <h2>11. Alterações desta Política</h2>
+  <p>Podemos atualizar esta Política. Mudanças relevantes serão comunicadas no app ou por e-mail. A data no topo indica a versão vigente.</p>
+
+  <h2>12. Contato</h2>
+  <ul><li>E-mail / Encarregado (DPO): <a href="mailto:cmokite@gmail.com">cmokite@gmail.com</a></li></ul>
+
+  <p style="margin-top:18px">
+    <span class="tag">Histórias infantis</span><span class="tag">IA generativa</span><span class="tag">Mercado Pago</span><span class="tag">Google Play</span><span class="tag">LGPD</span>
+  </p>
+
+  <footer>© 2026 ContoMágico. Todos os direitos reservados.</footer>
+</div>
+</div>
+</body>
+</html>
